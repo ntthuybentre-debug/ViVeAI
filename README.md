@@ -57,18 +57,16 @@ Trên cửa sổ Chrome của ViVe AI:
 1. Ở góc **trên bên phải** trang Extensions, tìm công tắc **"Developer mode"**
 2. **Bật ON** (gạt sang phải, chuyển sang màu xanh)
 
----
-
 ### 4.3 — Tải và Cài đặt Extension
 
 1. Sau khi bật Developer mode, nhấn nút **"Load unpacked"** (góc trên bên trái).
 2. Một hộp thoại chọn thư mục sẽ hiện ra. Điều hướng đến thư mục cài đặt ViVe AI theo đường dẫn mặc định:
-   `C:\Users\<Tên_User>\AppData\Local\ViVe AI\resources\extension`
-   *(Mẹo tìm nhanh: Click chuột phải vào shortcut **ViVe AI** trên Desktop -> Chọn **Open file location** -> Vào tiếp thư mục `resources` -> Chọn thư mục `extension`)*
+   `C:\Users\<Tên_User>\AppData\Local\ViVe AI\resources\extension` *(Mẹo tìm nhanh: Click chuột phải vào shortcut **ViVe AI** trên Desktop → Chọn **Open file location** → Vào tiếp thư mục `resources` → Chọn thư mục `extension` )*
 3. Chọn thư mục `extension` và nhấn **Select Folder**.
-4. Extension **ViVe AI Helper** sẽ xuất hiện trong danh sách.
+4. Extension **Captcha Client Auto Loader** sẽ xuất hiện trong danh sách.
 
 *Hình ảnh hướng dẫn cài đặt:*
+
 ![Cài đặt Extension Step 1](docs/images/1.png)
 ![Cài đặt Extension Step 2](docs/images/2.png)
 
@@ -76,22 +74,72 @@ Trên cửa sổ Chrome của ViVe AI:
 
 ### 4.4 — Ghim và Kích Hoạt Extension
 
-1. Click vào biểu tượng **Mảnh ghép (Extensions)** trên thanh công cụ của Chrome.
-2. Tìm **ViVe AI Helper** và click vào biểu tượng **Cây ghim (Pin)** để ghim extension lên thanh công cụ.
-3. Click vào biểu tượng của extension vừa ghim, chọn **"Server and Reload"**.
-4. Nếu trên màn hình xuất hiện thông báo cấp quyền từ **labs.google**, vui lòng nhấn **"Allow"** (Cho phép) để xác nhận.
+1. Click vào biểu tượng **Mảnh ghép (Extensions)** 🧩 trên thanh công cụ của Chrome.
+2. Tìm **Captcha Client Auto Loader** và click vào biểu tượng **Cây ghim (Pin)** 📌 để ghim extension lên thanh công cụ.
+3. Click vào **biểu tượng extension** vừa ghim trên thanh công cụ → Popup hiện ra → Nhấn **"Save & Reload"**.
+4. Nếu trên màn hình xuất hiện thông báo cấp quyền từ **labs.google** → Nhấn **"Allow"** (Cho phép).
 
 *Hình ảnh hướng dẫn ghim & kích hoạt:*
-![Ghim Extension Step 3](docs/images/3.png)
-![Server and Reload Step 4](docs/images/4.png)
-![Cho phép Labs.google Step 5](docs/images/5.png)
+
+![Trang Google Flow](docs/images/3.png)
+![Popup Save & Reload](docs/images/4.png)
+![Cho phép Labs.google](docs/images/5.png)
+
+> ✅ Bạn chỉ cần làm bước này **1 lần duy nhất**. Lần sau mở app, extension tự động có sẵn.
 
 ---
 
-## 🏁 Bước 5: Kiểm Tra Trạng Thái & Sử Dụng
+## ✅ Bước 5: Kiểm Tra Trạng Thái — Đợi Xanh Mới Chạy!
 
-1. Trên giao diện phần mềm ViVe AI, quan sát **2 chỉ báo trạng thái**:
-   - 🟢 **Captcha = Sẵn sàng (Màu Xanh)**: Extension đã kết nối và giải captcha thành công.
-   - 🟢 **Tokens = Sẵn sàng (Màu Xanh)**: Token đã tải xong từ server.
-2. **⚠️ QUAN TRỌNG:** Chỉ bắt đầu nhập prompt và chạy tool khi **CẢ HAI** chỉ báo đều chuyển sang màu **XANH**.
-3. Nếu chạy khi chỉ báo còn màu đỏ, video sẽ bị lỗi hoặc không sinh được.
+On the ViVe AI interface, observe **2 status indicators**:
+
+| Chỉ báo | 🔴 Đỏ = Chưa sẵn sàng | 🟢 Xanh = Sẵn sàng |
+|---------|----------------------|-------------------|
+| **Captcha** | Extension chưa kết nối / Chrome chưa mở | Extension hoạt động, captcha sẵn sàng |
+| **Tokens** | Chưa tải được token từ server | Token đã tải, sẵn sàng sinh video |
+
+### ⚠️ QUAN TRỌNG:
+> **Chỉ bắt đầu nhập prompt và chạy khi CẢ HAI chỉ báo đều XANH.**
+>
+> Nếu chạy khi còn đỏ → video sẽ lỗi hoặc không sinh được.
+
+### Nếu Captcha vẫn đỏ:
+- Kiểm tra Chrome có đang mở không
+- Kiểm tra đã đăng nhập Gmail chưa
+- Kiểm tra Extension đã được load chưa (Bước 4)
+
+### Nếu Tokens vẫn đỏ:
+- Nhấn nút **Refresh Tokens** trên app
+- Kiểm tra kết nối internet
+- Liên hệ Admin nếu vẫn không xanh
+
+---
+
+## 🎬 Bước 6: Bắt Đầu Tạo Video
+
+1. Đảm bảo **Captcha 🟢** và **Tokens 🟢** đều xanh
+2. Nhập **prompt** mô tả video bạn muốn tạo
+3. Chọn cài đặt (chất lượng, thời lượng, tỷ lệ khung hình)
+4. Nhấn **Generate** và đợi kết quả
+
+---
+
+## ❓ Câu Hỏi Thường Gặp
+
+**Q: Tại sao Chrome mở lên một cửa sổ riêng?**
+> A: ViVe AI sử dụng Chrome riêng biệt (không ảnh hưởng Chrome cá nhân của bạn) để xử lý captcha tự động. Không đóng cửa sổ này khi đang dùng app.
+
+**Q: Tôi có thể dùng tài khoản Gmail nào?**
+> A: Bất kỳ tài khoản Gmail nào cũng được. Không cần tài khoản đặc biệt.
+
+**Q: Extension có cần cài lại sau khi update app không?**
+> A: Không. Extension được lưu trong profile Chrome riêng, tự động giữ lại qua các lần cập nhật.
+
+**Q: App bị treo / không phản hồi?**
+> A: Đóng app và mở lại. Nếu vẫn lỗi, liên hệ Admin qua Zalo.
+
+---
+
+## 📞 Hỗ Trợ
+
+Liên hệ **Admin qua Zalo** để được hỗ trợ kích hoạt key, xử lý lỗi, hoặc hướng dẫn thêm.
