@@ -100,7 +100,7 @@ On the ViVe AI interface, observe **2 status indicators**:
 
 ### ⚠️ QUAN TRỌNG:
 > **Chỉ bắt đầu nhập prompt và chạy khi CẢ HAI chỉ báo đều XANH.**
->
+> Thư mục lưu tải xuống không được nằm ở ổ đĩa C (nếu muốn lưu ở đây phải chạy ViVeAI.exe dưới quyền Admin)
 > Nếu chạy khi còn đỏ → video sẽ lỗi hoặc không sinh được.
 
 ### Nếu Captcha vẫn đỏ:
@@ -109,7 +109,6 @@ On the ViVe AI interface, observe **2 status indicators**:
 - Kiểm tra Extension đã được load chưa (Bước 4)
 
 ### Nếu Tokens vẫn đỏ:
-- Nhấn nút **Refresh Tokens** trên app
 - Kiểm tra kết nối internet
 - Liên hệ Admin nếu vẫn không xanh
 
@@ -142,4 +141,4 @@ On the ViVe AI interface, observe **2 status indicators**:
 
 ## 📞 Hỗ Trợ
 
-Liên hệ **Admin qua Zalo** để được hỗ trợ kích hoạt key, xử lý lỗi, hoặc hướng dẫn thêm.
+Liên hệ **Admin qua Zalo 089 89 89 122** để được hỗ trợ kích hoạt key, xử lý lỗi, hoặc hướng dẫn thêm.
