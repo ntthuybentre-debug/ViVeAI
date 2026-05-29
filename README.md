@@ -35,7 +35,7 @@
 
 ---
 
-## 🌐 Bước 3: Đăng Nhập Gmail Trên Chrome
+## 🌐 Bước 3: Đăng Nhập Gmail Trên Chrome (Nếu chưa có)
 
 Khi mở app, **Chrome sẽ tự động mở** một cửa sổ riêng. Đây là Chrome chuyên dụng của ViVe AI.
 
@@ -45,24 +45,24 @@ Khi mở app, **Chrome sẽ tự động mở** một cửa sổ riêng. Đây l
 
 ---
 
-## 🧩 Bước 4: Cài Extension Captcha (Chỉ Làm 1 Lần)
+## 🧩 Bước 4: Cài Extension Captcha cho Chrome của app
 
 ### 4.1 — Mở trang Extensions
 
 Trên cửa sổ Chrome của ViVe AI:
-1. Gõ vào thanh địa chỉ: `chrome://extensions` rồi nhấn **Enter**
+1. Coppy: chrome://extensions dán vào thanh địa chỉ "Enter" vài vài quản lý tiện ích.
 
 ### 4.2 — Bật Developer Mode
 
 1. Ở góc **trên bên phải** trang Extensions, tìm công tắc **"Developer mode"**
-2. **Bật ON** (gạt sang phải, chuyển sang màu xanh)
+2. Bật công tắc "Developer mode" hoặc "Chế độ dành cho nhà phát triển" góc phải trên cùng.
 
 ### 4.3 — Tải và Cài đặt Extension
 
-1. Sau khi bật Developer mode, nhấn nút **"Load unpacked"** (góc trên bên trái).
-2. Một hộp thoại chọn thư mục sẽ hiện ra. Điều hướng đến thư mục cài đặt ViVe AI theo đường dẫn mặc định:
-   `C:\Users\<Tên_User>\AppData\Local\ViVe AI\resources\extension` *(Mẹo tìm nhanh: Click chuột phải vào shortcut **ViVe AI** trên Desktop → Chọn **Open file location** → Vào tiếp thư mục `resources` → Chọn thư mục `extension` )*
-3. Chọn thư mục `extension` và nhấn **Select Folder**.
+1. Nhấn nút "Load unpacked" hoặc "Tải tiện ích đã giải nén" góc bên trái trên cùng
+2. Hộp chọn thư mục hiện ra. Điều hướng đến thư mục cài đặt ViVe AI, mặc định C:\Users\<Tên_User>\AppData\Local\ViVe AI\resources\extension
+(Mẹo tìm nhanh: Click chuột phải vào shortcut ViVe AI trên Desktop → Chọn Open file location)
+3. Vào thư mục resources → Vào thư mục extension → nhấn "Select Folder" hoặc "Mở thư mục"
 4. Extension **Captcha Client Auto Loader** sẽ xuất hiện trong danh sách.
 
 *Hình ảnh hướng dẫn cài đặt:*
@@ -72,11 +72,11 @@ Trên cửa sổ Chrome của ViVe AI:
 
 ---
 
-### 4.4 — Ghim và Kích Hoạt Extension
+### 4.4 — Ghim và Kích Hoạt Extension: Vào trang https://labs.google/fx/vi/tools/flow
 
 1. Click vào biểu tượng **Mảnh ghép (Extensions)** 🧩 trên thanh công cụ của Chrome.
 2. Tìm **Captcha Client Auto Loader** và click vào biểu tượng **Cây ghim (Pin)** 📌 để ghim extension lên thanh công cụ.
-3. Click vào **biểu tượng extension** vừa ghim trên thanh công cụ → Popup hiện ra → Nhấn **"Save & Reload"**.
+3. Click vào **biểu tượng extension** vừa ghim trên thanh công cụ → Popup hiện ra → Nhấn **"Reload Page Nơ"** → Nhấn **"Save & Reload"**.
 4. Nếu trên màn hình xuất hiện thông báo cấp quyền từ **labs.google** → Nhấn **"Allow"** (Cho phép).
 
 *Hình ảnh hướng dẫn ghim & kích hoạt:*
@@ -85,21 +85,13 @@ Trên cửa sổ Chrome của ViVe AI:
 ![Popup Save & Reload](docs/images/4.png)
 ![Cho phép Labs.google](docs/images/5.png)
 
-> ✅ Bạn chỉ cần làm bước này **1 lần duy nhất**. Lần sau mở app, extension tự động có sẵn.
+> ✅ Bạn chỉ cần làm bước này **1 lần duy nhất** nếu chưa có. Lần sau app sẽ tự mở chrome có extension đã chọn.
 
 ---
 
-## ✅ Bước 5: Kiểm Tra Trạng Thái — Đợi Xanh Mới Chạy!
-
-On the ViVe AI interface, observe **2 status indicators**:
-
-| Chỉ báo | 🔴 Đỏ = Chưa sẵn sàng | 🟢 Xanh = Sẵn sàng |
-|---------|----------------------|-------------------|
-| **Captcha** | Extension chưa kết nối / Chrome chưa mở | Extension hoạt động, captcha sẵn sàng |
-| **Tokens** | Chưa tải được token từ server | Token đã tải, sẵn sàng sinh video |
+## ✅ Bước 5: Kiểm Tra Trạng Thái — Đợi Xanh (● Captcha ON | ● Account ON) Mới Chạy!
 
 ### ⚠️ QUAN TRỌNG:
-> **Chỉ bắt đầu nhập prompt và chạy khi CẢ HAI chỉ báo đều XANH.**
 > Thư mục lưu tải xuống không được nằm ở ổ đĩa C (nếu muốn lưu ở đây phải chạy ViVeAI.exe dưới quyền Admin)
 > Nếu chạy khi còn đỏ → video sẽ lỗi hoặc không sinh được.
 
