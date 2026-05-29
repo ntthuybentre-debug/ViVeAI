@@ -1,4 +1,4 @@
-# ViVe AI — Hướng Dẫn Cài Đặt & Sử Dụng
+# ViVe AI — Hướng Dẫn Cài Đặt & Sử Dụng (Nếu cần gửi gửi Ultraview qua zalo 089 89 89 122 Admin sẽ hướng dẫn)
 
 > **Phần mềm tạo video AI tự động** sử dụng Google Veo 3.1
 
