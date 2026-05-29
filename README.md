@@ -28,8 +28,8 @@
 ## 🔑 Bước 2: Kích Hoạt Bản Quyền
 
 1. Mở **ViVe AI** từ shortcut trên Desktop
-2. Lần đầu mở, app sẽ hiển thị **Key máy** (Hardware ID) của bạn
-3. **Copy key** này và gửi qua **Zalo** cho Admin
+2. Lần đầu mở, app sẽ hiển thị **Licensey** của bạn
+3. **Copy License** này và gửi qua **Zalo 089 89 89 122** cho Admin
 4. Admin sẽ kích hoạt key cho bạn trong hệ thống
 5. Sau khi được kích hoạt, mở lại app để bắt đầu sử dụng
 
@@ -40,7 +40,7 @@
 Khi mở app, **Chrome sẽ tự động mở** một cửa sổ riêng. Đây là Chrome chuyên dụng của ViVe AI.
 
 1. Trên cửa sổ Chrome vừa mở, **đăng nhập vào Gmail** bất kỳ
-2. Chrome sẽ tự chuyển đến trang `labs.google/fx/tools/flow`
+2. Chrome sẽ tự chuyển đến trang `labs.google/fx/tools/flow` và dồng ý hết các điều khoản của google nếu có.
 3. **Giữ cửa sổ Chrome này mở** — không đóng nó lại
 
 ---
