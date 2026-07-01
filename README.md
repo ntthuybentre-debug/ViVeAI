@@ -1,4 +1,4 @@
-# ViVe AI — Hướng Dẫn Cài Đặt & Sử Dụng (Nếu cần gửi gửi Ultraview qua zalo 089 89 89 122 Admin sẽ hướng dẫn)
+# ViVe AI — Hướng Dẫn Cài Đặt & Sử Dụng (Nếu cần gửi gửi Ultraview qua em sẽ hướng dẫn)
 
 > **Phần mềm tạo video AI tự động** sử dụng Google Veo 3.1
 
@@ -29,7 +29,6 @@
 
 1. Mở **ViVe AI** từ shortcut trên Desktop
 2. Lần đầu mở, app sẽ hiển thị **Licensey** của bạn
-3. **Copy License** này và gửi qua **Zalo 089 89 89 122** cho Admin
 4. Admin sẽ kích hoạt key cho bạn trong hệ thống
 5. Sau khi được kích hoạt, mở lại app để bắt đầu sử dụng
 
