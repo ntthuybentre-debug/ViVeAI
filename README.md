@@ -132,4 +132,4 @@ Trên cửa sổ Chrome của ViVe AI:
 
 ## 📞 Hỗ Trợ
 
-Liên hệ **Admin qua Zalo 089 89 89 122** để được hỗ trợ kích hoạt key, xử lý lỗi, hoặc hướng dẫn thêm.
+Liên hệ  để được hỗ trợ kích hoạt key, xử lý lỗi, hoặc hướng dẫn thêm.
