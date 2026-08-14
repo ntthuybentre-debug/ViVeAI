@@ -133,3 +133,5 @@ Trên cửa sổ Chrome của ViVe AI:
 ## 📞 Hỗ Trợ
 
 Liên hệ  để được hỗ trợ kích hoạt key, xử lý lỗi, hoặc hướng dẫn thêm.
+
+- update.json: File th&#244;ng tin c&#7853;p nh&#7853;t
