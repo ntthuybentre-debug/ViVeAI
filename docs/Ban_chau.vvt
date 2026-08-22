@@ -1,0 +1,671 @@
+{
+  "format": "viveai-workflow-template",
+  "version": 1,
+  "exported_at": "2026-08-22T05:08:59.828Z",
+  "name": "Bán chậu",
+  "node_count": 19,
+  "tags": [],
+  "thumbnail_base64": null,
+  "nodes": [
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVe\\Người mẫu\\001_anh_inh_dang_doc_bo_cuc_dang_l_6718e3b5_1785933138.jpg",
+        "label": "Rhyaelyn Vaezha"
+      },
+      "dragging": false,
+      "id": "koc_1787372884361",
+      "measured": {
+        "height": 173,
+        "width": 200
+      },
+      "position": {
+        "x": 443.72658207755615,
+        "y": 77.20991340287367
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "koc"
+    },
+    {
+      "data": {
+        "_rawResultPath": "C:\\Users\\Cuong\\Pictures\\Screenshots\\Screenshot 2026-08-22 112720.png",
+        "label": "Up Ảnh Node"
+      },
+      "dragging": false,
+      "id": "upload_img_1787372893519",
+      "measured": {
+        "height": 170,
+        "width": 200
+      },
+      "position": {
+        "x": 446.74366350404887,
+        "y": 289.08789317345713
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "upload_img"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\001_tao_anh_toan_canh_oi_thuc_co_g_526ace9d_1787373910.jpg",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "label": "Image Node",
+        "quality": "2k"
+      },
+      "dragging": false,
+      "id": "gen_image_1787372911223",
+      "measured": {
+        "height": 310,
+        "width": 260
+      },
+      "position": {
+        "x": 788.7146625687875,
+        "y": -20.138836610235856
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "gen_image"
+    },
+    {
+      "data": {
+        "label": "Tạo ảnh toàn cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. ",
+        "resultText": "Tạo ảnh toàn cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. "
+      },
+      "dragging": false,
+      "id": "prompt_1787372914704",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 424.1848446603312,
+        "y": -141.55556013726397
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\004_video_toan_canh_oi_thuc_co_gai_27c84775_1787374042.mp4",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "duration": "8s",
+        "label": "Consistent Video",
+        "quality": "720p"
+      },
+      "dragging": false,
+      "id": "r2v_1787372986935",
+      "measured": {
+        "height": 323,
+        "width": 280
+      },
+      "position": {
+        "x": 1453.1106046156142,
+        "y": -135.87246274782427
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "r2v"
+    },
+    {
+      "data": {
+        "label": "video toàn cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. cô gái nói chuyện liên tục từ khi vào video",
+        "resultText": "video toàn cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. cô gái nói chuyện liên tục từ khi vào video"
+      },
+      "dragging": false,
+      "id": "prompt_1787372991462",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 1107.7943512298232,
+        "y": -74.07252614337695
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\006_quay_san_pham_anh_2_can_canh_891254d0_1787374282.mp4",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "duration": "8s",
+        "label": "Consistent Video",
+        "quality": "720p"
+      },
+      "dragging": false,
+      "id": "r2v_1787373008695",
+      "measured": {
+        "height": 323,
+        "width": 280
+      },
+      "position": {
+        "x": 1491.436129991422,
+        "y": 887.0421237381516
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "r2v"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\005_video_goc_quay_tu_ben_phai_can_d91fd5d2_1787374184.mp4",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "duration": "8s",
+        "label": "Consistent Video",
+        "quality": "720p"
+      },
+      "dragging": false,
+      "id": "r2v_1787373009294",
+      "measured": {
+        "height": 323,
+        "width": 280
+      },
+      "position": {
+        "x": 1487.9924849556912,
+        "y": 557.7359884894621
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "r2v"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\007_quay_san_pham_anh_2_can_canh_3224133d_1787374407.mp4",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "duration": "8s",
+        "label": "Consistent Video",
+        "quality": "720p"
+      },
+      "dragging": false,
+      "id": "r2v_1787373009838",
+      "measured": {
+        "height": 323,
+        "width": 280
+      },
+      "position": {
+        "x": 1470.1473320897212,
+        "y": 207.95130693161252
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "r2v"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\002_anh_chup_can_canh_san_pham_anh_73fb516a_1787374094.jpg",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "label": "Image Node",
+        "quality": "2k"
+      },
+      "dragging": false,
+      "id": "gen_image_1787373032790",
+      "measured": {
+        "height": 310,
+        "width": 260
+      },
+      "position": {
+        "x": 777.1461884939965,
+        "y": 397.69414644443464
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "gen_image"
+    },
+    {
+      "data": {
+        "label": "Ảnh chụp cận cảnh sản phẩm ảnh 2. ",
+        "resultText": "Ảnh chụp cận cảnh sản phẩm ảnh 2. "
+      },
+      "dragging": false,
+      "id": "prompt_1787373054262",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 426.38145984444606,
+        "y": 583.2181140254368
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\003_video_goc_quay_tu_ben_trai_can_e9d722e7_1787374063.mp4",
+        "aspect_ratio": "9:16",
+        "auto_delogo": true,
+        "duration": "8s",
+        "label": "Consistent Video",
+        "quality": "720p"
+      },
+      "dragging": false,
+      "id": "c836d427-a261-4384-9164-b2e5227aa72e",
+      "measured": {
+        "height": 323,
+        "width": 280
+      },
+      "position": {
+        "x": 1495.436129991422,
+        "y": 1257.0421237381515
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "r2v"
+    },
+    {
+      "data": {
+        "label": "Quay sản phẩm ảnh 2 cận cảnh",
+        "resultText": "Quay sản phẩm ảnh 2 cận cảnh"
+      },
+      "dragging": false,
+      "id": "e648bcb8-c352-44f5-9153-d49c39e0b61e",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 1144.7887625722535,
+        "y": 274.24531480910673
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "label": "video góc quay từ bên phải cận cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. cô gái nói chuyện liên tục từ khi vào video",
+        "resultText": "video góc quay từ bên phải cận cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. cô gái nói chuyện liên tục từ khi vào video"
+      },
+      "dragging": false,
+      "id": "91710cff-ad7c-4131-9872-c2147c5b458e",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 1154.7887625722535,
+        "y": 616.2453148091067
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "label": "Quay sản phẩm ảnh 2 cận cảnh",
+        "resultText": "Quay sản phẩm ảnh 2 cận cảnh"
+      },
+      "dragging": false,
+      "id": "3b20c066-540c-4331-9db6-ebe8b3a9d60e",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 1150.7887625722535,
+        "y": 946.2453148091068
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "label": "video góc quay từ bên trái cận cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. cô gái nói chuyện liên tục từ khi vào video",
+        "resultText": "video góc quay từ bên trái cận cảnh đời thực cô gái ảnh 1 ngồi trong vườn rau ở nông thôn việt nam. trước mặt là sản phẩm ảnh 2. cô gái nói chuyện liên tục từ khi vào video"
+      },
+      "dragging": false,
+      "id": "prompt_1787373441040",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 1159.4674788813495,
+        "y": 1293.4770894427952
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    },
+    {
+      "data": {
+        "_rawResultPath": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\reconcat_1787374546802.mp4",
+        "durations": {
+          "media1-in": 6,
+          "media2-in": 4,
+          "media3-in": 6,
+          "media4-in": 6,
+          "media5-in": 8
+        },
+        "label": "Concat Node",
+        "mutedPorts": {
+          "media1-in": true,
+          "media2-in": true,
+          "media3-in": true,
+          "media4-in": true,
+          "media5-in": true
+        },
+        "orientation": "portrait"
+      },
+      "dragging": false,
+      "id": "concat_1787373640116",
+      "measured": {
+        "height": 643,
+        "width": 300
+      },
+      "position": {
+        "x": 1945.7889657307896,
+        "y": -69.21929574763641
+      },
+      "selected": true,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "concat"
+    },
+    {
+      "data": {
+        "label": "Giọng Đọc",
+        "numSlots": 2,
+        "ttsVoice": "Trúc Ly"
+      },
+      "dragging": false,
+      "id": "tts_voice_1787373679740",
+      "measured": {
+        "height": 360,
+        "width": 280
+      },
+      "position": {
+        "x": 764.5264196176047,
+        "y": 759.668140743504
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "tts_voice"
+    },
+    {
+      "data": {
+        "label": "Trồng cây mà hay bị úng rễ, chết cây thì bỏ ngay chậu cũ đi nha! Thử ngay combo 5 chậu nhựa dẻo C7 này! Kích thước 16x14cm chuẩn chỉnh. Nhựa cực kỳ dày dặn, bóp méo thoải mái không lo nứt vỡ. Đáy chậu có sẵn lỗ thoát nước siêu tốt, giúp rễ cây luôn thông thoáng. Màu đen sạch sẽ, phơi nắng mưa ngoài trời thoải mái mà độ bền cực cao, tái sử dụng được nhiều mùa. Một set tận 5 cái mà giá thì rẻ bèo. Bác nào mê trồng hoa, trồng rau chốt ngay ở giỏ hàng góc trái nha!",
+        "resultText": "Trồng cây mà hay bị úng rễ, chết cây thì bỏ ngay chậu cũ đi nha! Thử ngay combo 5 chậu nhựa dẻo C7 này! Kích thước 16x14cm chuẩn chỉnh. Nhựa cực kỳ dày dặn, bóp méo thoải mái không lo nứt vỡ. Đáy chậu có sẵn lỗ thoát nước siêu tốt, giúp rễ cây luôn thông thoáng. Màu đen sạch sẽ, phơi nắng mưa ngoài trời thoải mái mà độ bền cực cao, tái sử dụng được nhiều mùa. Một set tận 5 cái mà giá thì rẻ bèo. Bác nào mê trồng hoa, trồng rau chốt ngay ở giỏ hàng góc trái nha!"
+      },
+      "dragging": false,
+      "id": "prompt_1787373710580",
+      "measured": {
+        "height": 159,
+        "width": 240
+      },
+      "position": {
+        "x": 418.0870287172109,
+        "y": 825.453517097525
+      },
+      "selected": false,
+      "style": {
+        "boxShadow": "0 0 0 3px rgba(52, 199, 89, 0.7)"
+      },
+      "type": "prompt"
+    }
+  ],
+  "edges": [
+    {
+      "id": "xy-edge__prompt_1787372914704text-out-gen_image_1787372911223text-in",
+      "source": "prompt_1787372914704",
+      "sourceHandle": "text-out",
+      "target": "gen_image_1787372911223",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__koc_1787372884361image-out-gen_image_1787372911223img1-in",
+      "source": "koc_1787372884361",
+      "sourceHandle": "image-out",
+      "target": "gen_image_1787372911223",
+      "targetHandle": "img1-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-gen_image_1787372911223img2-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "gen_image_1787372911223",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__prompt_1787372991462text-out-r2v_1787372986935text-in",
+      "source": "prompt_1787372991462",
+      "sourceHandle": "text-out",
+      "target": "r2v_1787372986935",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__prompt_1787373054262text-out-gen_image_1787373032790text-in",
+      "source": "prompt_1787373054262",
+      "sourceHandle": "text-out",
+      "target": "gen_image_1787373032790",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-gen_image_1787373032790img2-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "gen_image_1787373032790",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__gen_image_1787372911223image-out-gen_image_1787373032790img3-in",
+      "source": "gen_image_1787372911223",
+      "sourceHandle": "image-out",
+      "target": "gen_image_1787373032790",
+      "targetHandle": "img3-in"
+    },
+    {
+      "id": "xy-edge__gen_image_1787373032790image-out-r2v_1787373009838img1-in",
+      "source": "gen_image_1787373032790",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373009838",
+      "targetHandle": "img1-in"
+    },
+    {
+      "id": "xy-edge__gen_image_1787373032790image-out-r2v_1787373008695img1-in",
+      "source": "gen_image_1787373032790",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373008695",
+      "targetHandle": "img1-in"
+    },
+    {
+      "id": "xy-edge__gen_image_1787372911223image-out-r2v_1787372986935img1-in",
+      "source": "gen_image_1787372911223",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787372986935",
+      "targetHandle": "img1-in"
+    },
+    {
+      "id": "xy-edge__gen_image_1787372911223image-out-r2v_1787373009294img1-in",
+      "source": "gen_image_1787372911223",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373009294",
+      "targetHandle": "img1-in"
+    },
+    {
+      "id": "xy-edge__e648bcb8-c352-44f5-9153-d49c39e0b61etext-out-r2v_1787373009838text-in",
+      "source": "e648bcb8-c352-44f5-9153-d49c39e0b61e",
+      "sourceHandle": "text-out",
+      "target": "r2v_1787373009838",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__91710cff-ad7c-4131-9872-c2147c5b458etext-out-r2v_1787373009294text-in",
+      "source": "91710cff-ad7c-4131-9872-c2147c5b458e",
+      "sourceHandle": "text-out",
+      "target": "r2v_1787373009294",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__3b20c066-540c-4331-9db6-ebe8b3a9d60etext-out-r2v_1787373008695text-in",
+      "source": "3b20c066-540c-4331-9db6-ebe8b3a9d60e",
+      "sourceHandle": "text-out",
+      "target": "r2v_1787373008695",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-r2v_1787373009838img2-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373009838",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-r2v_1787373008695img2-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373008695",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__prompt_1787373441040text-out-c836d427-a261-4384-9164-b2e5227aa72etext-in",
+      "source": "prompt_1787373441040",
+      "sourceHandle": "text-out",
+      "target": "c836d427-a261-4384-9164-b2e5227aa72e",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__gen_image_1787372911223image-out-c836d427-a261-4384-9164-b2e5227aa72eimg1-in",
+      "source": "gen_image_1787372911223",
+      "sourceHandle": "image-out",
+      "target": "c836d427-a261-4384-9164-b2e5227aa72e",
+      "targetHandle": "img1-in"
+    },
+    {
+      "id": "xy-edge__koc_1787372884361image-out-r2v_1787372986935img2-in",
+      "source": "koc_1787372884361",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787372986935",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__koc_1787372884361image-out-r2v_1787373009294img2-in",
+      "source": "koc_1787372884361",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373009294",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__koc_1787372884361image-out-c836d427-a261-4384-9164-b2e5227aa72eimg2-in",
+      "source": "koc_1787372884361",
+      "sourceHandle": "image-out",
+      "target": "c836d427-a261-4384-9164-b2e5227aa72e",
+      "targetHandle": "img2-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-c836d427-a261-4384-9164-b2e5227aa72eimg3-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "c836d427-a261-4384-9164-b2e5227aa72e",
+      "targetHandle": "img3-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-r2v_1787373009294img3-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787373009294",
+      "targetHandle": "img3-in"
+    },
+    {
+      "id": "xy-edge__upload_img_1787372893519image-out-r2v_1787372986935img3-in",
+      "source": "upload_img_1787372893519",
+      "sourceHandle": "image-out",
+      "target": "r2v_1787372986935",
+      "targetHandle": "img3-in"
+    },
+    {
+      "id": "xy-edge__r2v_1787372986935video-out-concat_1787373640116media1-in",
+      "source": "r2v_1787372986935",
+      "sourceHandle": "video-out",
+      "target": "concat_1787373640116",
+      "targetHandle": "media1-in"
+    },
+    {
+      "id": "xy-edge__r2v_1787373009838video-out-concat_1787373640116media2-in",
+      "source": "r2v_1787373009838",
+      "sourceHandle": "video-out",
+      "target": "concat_1787373640116",
+      "targetHandle": "media2-in"
+    },
+    {
+      "id": "xy-edge__r2v_1787373009294video-out-concat_1787373640116media3-in",
+      "source": "r2v_1787373009294",
+      "sourceHandle": "video-out",
+      "target": "concat_1787373640116",
+      "targetHandle": "media3-in"
+    },
+    {
+      "id": "xy-edge__r2v_1787373008695video-out-concat_1787373640116media4-in",
+      "source": "r2v_1787373008695",
+      "sourceHandle": "video-out",
+      "target": "concat_1787373640116",
+      "targetHandle": "media4-in"
+    },
+    {
+      "id": "xy-edge__c836d427-a261-4384-9164-b2e5227aa72evideo-out-concat_1787373640116media5-in",
+      "source": "c836d427-a261-4384-9164-b2e5227aa72e",
+      "sourceHandle": "video-out",
+      "target": "concat_1787373640116",
+      "targetHandle": "media5-in"
+    },
+    {
+      "id": "xy-edge__prompt_1787373710580text-out-tts_voice_1787373679740text-in-0",
+      "source": "prompt_1787373710580",
+      "sourceHandle": "text-out",
+      "target": "tts_voice_1787373679740",
+      "targetHandle": "text-in-0"
+    },
+    {
+      "id": "xy-edge__tts_voice_1787373679740audio-out-concat_1787373640116audio-in",
+      "source": "tts_voice_1787373679740",
+      "sourceHandle": "audio-out",
+      "target": "concat_1787373640116",
+      "targetHandle": "audio-in"
+    }
+  ]
+}
