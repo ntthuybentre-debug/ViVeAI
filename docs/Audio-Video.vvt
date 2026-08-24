@@ -1,0 +1,448 @@
+{
+  "format": "viveai-workflow-template",
+  "version": 1,
+  "exported_at": "2026-08-24T08:03:28.329Z",
+  "name": "Audio-video",
+  "node_count": 9,
+  "tags": [],
+  "thumbnail_base64": null,
+  "nodes": [
+    {
+      "data": {
+        "label": "AI Chat Node",
+        "model": "gemini-3-pro",
+        "prompt1": "You are given the COMPLETE subtitle script in SRT format or plain text containing subtitle segments.\n\nYour task is to generate EXACTLY ONE realistic VIDEO GENERATION PROMPT for EVERY subtitle segment.\n\nThe number of generated video prompts MUST be EXACTLY EQUAL to the number of subtitle segments.\n\nSTRICT 1:1 MAPPING RULE:\n\nONE subtitle segment = ONE video prompt.\n\nNEVER combine two or more subtitle segments into one prompt.\nNEVER skip a subtitle segment.\nNEVER generate more than one prompt for a subtitle segment.\nNEVER merge subtitle segments because they describe the same scene, character, action, location, or event.\nEven if consecutive subtitle segments describe the same continuous scene or action, generate separate prompts for each segment.\nEven if a subtitle segment is extremely short, generate exactly one complete video prompt.\nThe output order MUST exactly match the subtitle order.\n\nSTEP 1 — COUNT ALL SUBTITLE SEGMENTS\n\nRead the ENTIRE subtitle script from beginning to end before generating anything.\n\nInternally identify and count EVERY subtitle segment.\n\nFor SRT, each numbered subtitle entry is ONE segment, regardless of how many dialogue lines it contains.\n\nInternally create:\n\nSubtitle 1 → Video Prompt 1\nSubtitle 2 → Video Prompt 2\nSubtitle 3 → Video Prompt 3\n...\nSubtitle N → Video Prompt N\n\nDo NOT output this mapping.\n\nSTEP 2 — UNDERSTAND THE COMPLETE SCRIPT\n\nRead and understand the entire subtitle script before generating prompts.\n\nInternally determine:\n\n* Overall subject and context\n* Characters\n* Recurring characters\n* Character appearance\n* Age\n* Gender\n* Hairstyle\n* Facial characteristics\n* Clothing\n* Locations\n* Environment\n* Objects\n* Time of day\n* Weather\n* Lighting\n* Emotional progression\n* Actions\n* Spatial relationships\n* Visual continuity\n\nRecurring characters MUST maintain consistent appearance, age, hairstyle, clothing, body characteristics and other relevant visual traits throughout the script unless the subtitle explicitly indicates a change.\n\nMaintain environmental, spatial, temporal and lighting continuity whenever appropriate.\n\nSTEP 3 — GENERATE ONE VIDEO PROMPT PER SEGMENT\n\nFor EACH subtitle segment, generate EXACTLY ONE realistic VIDEO GENERATION PROMPT.\n\nThe prompt must visually represent the specific meaning and physical action of THAT subtitle segment.\n\nThis is a VIDEO GENERATION prompt, NOT an image prompt.\n\nThe description must represent an event unfolding through time.\n\nEach prompt should define the relevant:\n\n* Subject\n* Physical action\n* Movement\n* Environment\n* Objects\n* Camera angle\n* Framing\n* Camera behavior\n* Lighting\n* Mood\n* Physical interaction\n* Temporal continuity\n\nDo not turn the subtitle into a static visual description.\n\nSTEP 4 — CONTINUOUS PHYSICAL MOTION\n\nALL physical actions MUST occur through continuous, physically plausible movement.\n\nThe beginning, middle and end of every major action must remain logically connected.\n\nNEVER allow:\n\n* People to suddenly appear in another location\n* People to teleport\n* Objects to suddenly appear\n* Objects to suddenly disappear without a physical cause\n* Objects to change position without physical interaction\n* Characters to instantly change posture\n* Body parts to suddenly change position\n* Hands or feet to teleport\n* Objects to float without a physical cause\n* Objects to pass through solid surfaces\n* Characters to instantly change orientation\n* Vehicles to suddenly change position or direction\n* Unexplained changes in spatial relationships\n* Instant transitions between incompatible physical states\n\nEvery major physical change MUST be visually connected by the movement that causes it.\n\nActions must unfold progressively rather than jumping directly between states.\n\nSTEP 5 — OBJECT CONTINUITY\n\nObjects MUST remain physically consistent throughout the shot.\n\nAn object remains in its current position until a visible physical action moves it.\n\nWhen a character interacts with an object, maintain the complete physical interaction:\n\napproach → contact → interaction → movement → release\n\nDo NOT introduce objects without a visible physical cause.\n\nDo NOT remove objects without a visible physical cause.\n\nMaintain consistent object position, orientation, scale, shape and relationship to surrounding objects throughout the shot.\n\nSTEP 6 — CHARACTER SPATIAL CONTINUITY\n\nCharacters MUST maintain consistent spatial relationships with the environment.\n\nWhen a character changes position, the movement connecting the positions must be physically visible and continuous.\n\nCharacter movement must respect:\n\n* Distance\n* Direction\n* Orientation\n* Ground contact\n* Balance\n* Body mechanics\n* Surrounding obstacles\n\nDo NOT teleport characters between positions.\n\nDo NOT change a character's orientation or posture without a physically plausible transition.\n\nSTEP 7 — BODY AND LIMB CONTINUITY\n\nMaintain anatomically consistent movement throughout the video.\n\nThe head, torso, arms, hands, legs and feet must remain physically connected and spatially consistent.\n\nAvoid:\n\n* Extra limbs\n* Duplicated body parts\n* Missing body parts\n* Disconnected limbs\n* Impossible joint positions\n* Sudden limb repositioning\n* Hands passing through objects\n* Hands changing position without movement\n* Unnatural body deformation\n\nWhen interacting with an object, maintain believable contact between the relevant body part and the object.\n\nSTEP 8 — TEMPORAL ACTION SEQUENCE\n\nActions MUST follow a logical temporal sequence.\n\nWhen an action contains multiple physical stages, those stages must occur progressively and in the correct order.\n\nDo NOT compress multiple physical stages into an instantaneous transition.\n\nDo NOT describe unrelated actions as happening simultaneously when they require sequential physical movement.\n\nPrefer a simple, continuous primary action rather than unnecessarily complex choreography.\n\nThe physical action must remain understandable from beginning to end.\n\nSTEP 9 — CAMERA CONTINUITY\n\nThe camera must behave like a real physical camera.\n\nCamera movement must remain continuous and physically plausible.\n\nAppropriate camera behavior may include:\n\n* Locked-off camera\n* Slow tracking\n* Slow dolly\n* Lateral tracking\n* Subject tracking\n* Slow pan\n* Slow tilt\n* Subtle push-in\n* Subtle pull-out\n* Gentle handheld movement\n\nDo NOT suddenly change:\n\n* Camera position\n* Camera height\n* Camera direction\n* Camera distance\n* Viewing angle\n* Perspective\n\nDo NOT introduce unexplained cuts or instant perspective changes unless explicitly required by the subtitle context.\n\nMaintain a consistent relationship between camera and subject throughout the shot.\n\nSTEP 10 — ENVIRONMENTAL MOTION\n\nEnvironmental movement must remain physically plausible and consistent with the scene.\n\nWhen appropriate, environmental elements may show subtle natural movement caused by:\n\n* Wind\n* Gravity\n* Human activity\n* Vehicles\n* Machinery\n* Water\n* Weather\n* Normal environmental forces\n\nEnvironmental elements MUST NOT randomly appear, disappear or change position without a physical cause.\n\nSTEP 11 — PHYSICS AND CAUSALITY\n\nAll movement MUST follow realistic physical cause and effect.\n\nEvery visible change in position, posture, object state or environment should have a believable physical cause.\n\nRespect:\n\n* Gravity\n* Inertia\n* Momentum\n* Friction\n* Weight\n* Contact\n* Collision\n* Balance\n* Human anatomy\n\nObjects and characters must react naturally to physical forces and interactions.\n\nDo NOT prioritize dramatic visual changes over physical consistency.\n\nSTEP 12 — CONTINUITY BETWEEN SUBTITLE SEGMENTS\n\nEach subtitle segment produces an independent video prompt.\n\nHowever, when multiple segments belong to the same continuous scene, maintain continuity of:\n\n* Character identity\n* Appearance\n* Clothing\n* Location\n* Objects\n* Spatial relationships\n* Time of day\n* Lighting\n* Weather\n* General environment\n\nContinuity between prompts MUST NOT cause subtitle segments to be merged.\n\nEvery subtitle segment still receives exactly one separate prompt.\n\nSTEP 13 — SHORT OR ABSTRACT SUBTITLES\n\nIf a subtitle is very short, generate exactly one complete video prompt.\n\nIf the subtitle describes an abstract concept, represent the meaning through realistic visible actions, human behavior, environment or physical situations.\n\nDo NOT generate text, captions, subtitles, written words, diagrams, symbols or interface elements inside the video unless the subtitle itself explicitly requires visible text.\n\nSTEP 14 — VIDEO-FIRST GENERATION\n\nThe generated prompt must describe a real event unfolding over time.\n\nPrioritize:\n\nACTION\n→ CONTINUOUS MOVEMENT\n→ PHYSICAL INTERACTION\n→ SPATIAL CONTINUITY\n→ TEMPORAL CONTINUITY\n→ CAMERA CONTINUITY\n→ REALISTIC PHYSICS\n\nDo NOT prioritize static composition over motion.\n\nDo NOT write a prompt that could function equally well as a still-image prompt.\n\nSTEP 15 — MOTION COMPLEXITY CONTROL\n\nKeep the physical action as simple as possible while accurately representing the subtitle.\n\nDo NOT invent unnecessary actions.\n\nDo NOT add unnecessary object interactions.\n\nDo NOT add unnecessary character movements.\n\nDo NOT create complicated choreography unless the subtitle explicitly requires it.\n\nA simple, physically coherent action is preferable to multiple actions that increase the possibility of continuity errors.\n\nSTEP 16 — FINAL INTERNAL VALIDATION\n\nBefore producing the final answer, internally verify:\n\n1. Total subtitle segments = total video prompts.\n2. Every subtitle segment has exactly one prompt.\n3. No subtitle segment was skipped.\n4. No subtitle segments were merged.\n5. No extra prompts were created.\n6. Output order exactly matches subtitle order.\n7. Every prompt represents its specific subtitle segment.\n8. Physical actions are continuous.\n9. Characters do not teleport.\n10. Objects do not suddenly appear.\n11. Objects do not suddenly disappear without physical cause.\n12. Body parts remain anatomically consistent.\n13. Character positions remain spatially consistent.\n14. Object positions remain spatially consistent.\n15. Actions follow logical temporal order.\n16. Camera movement remains continuous.\n17. Physical cause and effect remain believable.\n18. The prompt describes VIDEO MOTION rather than a static image.\n\nIf any condition fails, silently correct the generated prompt before producing the final answer.\n\nSTEP 17 — OUTPUT FORMAT\n\nOutput ONLY the generated video prompts.\n\nExactly ONE video prompt for EACH subtitle segment.\n\nEach video prompt must be on its own line.\n\nSeparate consecutive prompts with exactly ONE blank line.\n\nDo NOT include:\n\n* Bullet points\n* Subtitle text\n* Segment numbers\n* Labels\n* Headings\n* Explanations\n* Commentary\n* Counts\n* Introductory text\n* Closing text\n\nThe final output must contain ONLY the generated video prompts.\n",
+        "prompt2": "Đây là Chat Văn bản, không phải tạo ảnh. Prompt phải đảm bảo không vi phạm chính sách labs.google/fx/tools/flow .  Mỗi Prompt phải viết trên 1 dòng, có Số thứ tự ở đầu. Viết prompt trực tiếp, không giải thích, không ghi chú. ",
+        "resultMode": "multi"
+      },
+      "dragging": false,
+      "id": "ai_chat_1787455105020",
+      "measured": {
+        "height": 464,
+        "width": 280
+      },
+      "position": {
+        "x": 135.8265036724238,
+        "y": 509.55363134289286
+      },
+      "selected": false,
+      "style": {},
+      "type": "ai_chat"
+    },
+    {
+      "data": {
+        "aspect_ratio": "16:9",
+        "auto_delogo": true,
+        "duration": "8s",
+        "items": [
+          {
+            "index": 0,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\001_1_a_slow_camera_push_forward_a_5d376e6c_1787537106.mp4",
+            "prompt": "1. A slow camera push forward across a dense tropical rainforest floor, revealing massive twisting tree roots and large green ferns as thick mist rolls gently over the damp soil in the humid breeze.",
+            "status": "success",
+            "task_id": "5d376e6c"
+          },
+          {
+            "index": 1,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\002_2_a_steady_camera_tilts_down_f_52c2aced_1787537120.mp4",
+            "prompt": "2. A steady camera tilts down from the high jungle canopy, capturing bright shafts of sunlight piercing through thick green leaves as a gentle rain begins to fall, causing water droplets to slowly drip from the broad leaves into a calm stream below.",
+            "status": "success",
+            "task_id": "52c2aced"
+          },
+          {
+            "index": 2,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\003_3_a_macro_shot_tracks_a_large_7180cf81_1787537135.mp4",
+            "prompt": "3. A macro shot tracks a large green praying mantis resting on a wet leaf; the insect slowly raises its front legs and turns its head sharply toward a small fly that gently lands on the leaf's edge.",
+            "status": "success",
+            "task_id": "7180cf81"
+          },
+          {
+            "index": 3,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\004_4_a_lateral_tracking_shot_foll_76f576c7_1787537150.mp4",
+            "prompt": "4. A lateral tracking shot follows a bright scarlet macaw as it hops continuously along a thick mossy tree branch high in the canopy, extending its beak to pluck a small red fruit from a hanging vine.",
+            "status": "success",
+            "task_id": "76f576c7"
+          },
+          {
+            "index": 4,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\005_5_a_smooth_tracking_shot_follo_06718dd7_1787537166.mp4",
+            "prompt": "5. A smooth tracking shot follows a small brown spider monkey as it swings gracefully from a hanging vine to a sturdy branch, landing smoothly on its feet and immediately turning its head side to side to scan the dense foliage.",
+            "status": "success",
+            "task_id": "06718dd7"
+          },
+          {
+            "index": 5,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\006_6_a_ground_level_camera_tracks_664dac42_1787537180.mp4",
+            "prompt": "6. A ground-level camera tracks alongside a muscular jaguar walking slowly and deliberately across the shadow-dappled forest floor, its paws stepping silently on damp fallen leaves while its ears twitch in the humid air.",
+            "status": "success",
+            "task_id": "664dac42"
+          },
+          {
+            "index": 6,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\007_7_a_steady_macro_shot_captures_23b5db09_1787537195.mp4",
+            "prompt": "7. A steady macro shot captures a vibrant blue morpho butterfly slowly flapping its wings and taking off from a bright red bromeliad flower, while a small green tree frog continuously crawls up the flower's thick stem in the background.",
+            "status": "success",
+            "task_id": "23b5db09"
+          },
+          {
+            "index": 7,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\008_8_a_slow_dolly_shot_moves_alon_7e2ae2a6_1787537211.mp4",
+            "prompt": "8. A slow dolly shot moves alongside a horizontal fallen log where a continuous line of leaf-cutter ants marches from left to right, each ant steadily carrying a small, distinct piece of green leaf above its head.",
+            "status": "success",
+            "task_id": "7e2ae2a6"
+          },
+          {
+            "index": 8,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\009_9_a_static_wide_shot_shows_the_97d8fd93_1787537225.mp4",
+            "prompt": "9. A static wide shot shows the ambient light fading smoothly into a deep blue twilight over the dense jungle canopy, as thick fog rolls slowly between the silhouettes of tall trees and fireflies begin to blink continuously in the foreground.",
+            "status": "success",
+            "task_id": "97d8fd93"
+          },
+          {
+            "index": 9,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\010_10_a_steady_close_up_shot_capt_dc3e3039_1787537240.mp4",
+            "prompt": "10. A steady close-up shot captures a nocturnal tarsier with large eyes slowly emerging from a dark hollow in a tree trunk, gripping the rough bark with its long fingers and deliberately turning its head to observe the moonlit surroundings.",
+            "status": "success",
+            "task_id": "dc3e3039"
+          },
+          {
+            "index": 10,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\011_11_a_slow_sweeping_aerial_dron_33bee281_1787537255.mp4",
+            "prompt": "11. A slow, sweeping aerial drone shot glides smoothly forward over the vast, undulating green canopy of the rainforest, illuminated by the soft golden light of the early morning as mist steadily rises from the deep valleys.",
+            "status": "success",
+            "task_id": "33bee281"
+          },
+          {
+            "index": 11,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\012_12_a_slow_continuous_camera_ti_76d03f60_1787537270.mp4",
+            "prompt": "12. A slow, continuous camera tilt-up starts from the dark, root-tangled forest floor, moving steadily up the massive trunk of an ancient, moss-covered tree, and concluding on the sprawling branches reaching outward into the sunlit canopy.",
+            "status": "success",
+            "task_id": "76d03f60"
+          }
+        ],
+        "label": "Text to Video",
+        "quality": "720p"
+      },
+      "dragging": false,
+      "id": "t2v_1787455108948",
+      "measured": {
+        "height": 273,
+        "width": 280
+      },
+      "position": {
+        "x": 498.56882912205026,
+        "y": 511.2119602487344
+      },
+      "selected": false,
+      "style": {},
+      "type": "t2v"
+    },
+    {
+      "data": {
+        "items": [
+          {
+            "index": 0,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\001_1_a_slow_camera_push_forward_a_5d376e6c_1787537106.mp4",
+            "prompt": "1. A slow camera push forward across a dense tropical rainforest floor, revealing massive twisting tree roots and large green ferns as thick mist rolls gently over the damp soil in the humid breeze.",
+            "status": "success",
+            "task_id": "5d376e6c"
+          },
+          {
+            "index": 1,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\002_2_a_steady_camera_tilts_down_f_52c2aced_1787537120.mp4",
+            "prompt": "2. A steady camera tilts down from the high jungle canopy, capturing bright shafts of sunlight piercing through thick green leaves as a gentle rain begins to fall, causing water droplets to slowly drip from the broad leaves into a calm stream below.",
+            "status": "success",
+            "task_id": "52c2aced"
+          },
+          {
+            "index": 2,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\003_3_a_macro_shot_tracks_a_large_7180cf81_1787537135.mp4",
+            "prompt": "3. A macro shot tracks a large green praying mantis resting on a wet leaf; the insect slowly raises its front legs and turns its head sharply toward a small fly that gently lands on the leaf's edge.",
+            "status": "success",
+            "task_id": "7180cf81"
+          },
+          {
+            "index": 3,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\004_4_a_lateral_tracking_shot_foll_76f576c7_1787537150.mp4",
+            "prompt": "4. A lateral tracking shot follows a bright scarlet macaw as it hops continuously along a thick mossy tree branch high in the canopy, extending its beak to pluck a small red fruit from a hanging vine.",
+            "status": "success",
+            "task_id": "76f576c7"
+          },
+          {
+            "index": 4,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\005_5_a_smooth_tracking_shot_follo_06718dd7_1787537166.mp4",
+            "prompt": "5. A smooth tracking shot follows a small brown spider monkey as it swings gracefully from a hanging vine to a sturdy branch, landing smoothly on its feet and immediately turning its head side to side to scan the dense foliage.",
+            "status": "success",
+            "task_id": "06718dd7"
+          },
+          {
+            "index": 5,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\006_6_a_ground_level_camera_tracks_664dac42_1787537180.mp4",
+            "prompt": "6. A ground-level camera tracks alongside a muscular jaguar walking slowly and deliberately across the shadow-dappled forest floor, its paws stepping silently on damp fallen leaves while its ears twitch in the humid air.",
+            "status": "success",
+            "task_id": "664dac42"
+          },
+          {
+            "index": 6,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\007_7_a_steady_macro_shot_captures_23b5db09_1787537195.mp4",
+            "prompt": "7. A steady macro shot captures a vibrant blue morpho butterfly slowly flapping its wings and taking off from a bright red bromeliad flower, while a small green tree frog continuously crawls up the flower's thick stem in the background.",
+            "status": "success",
+            "task_id": "23b5db09"
+          },
+          {
+            "index": 7,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\008_8_a_slow_dolly_shot_moves_alon_7e2ae2a6_1787537211.mp4",
+            "prompt": "8. A slow dolly shot moves alongside a horizontal fallen log where a continuous line of leaf-cutter ants marches from left to right, each ant steadily carrying a small, distinct piece of green leaf above its head.",
+            "status": "success",
+            "task_id": "7e2ae2a6"
+          },
+          {
+            "index": 8,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\009_9_a_static_wide_shot_shows_the_97d8fd93_1787537225.mp4",
+            "prompt": "9. A static wide shot shows the ambient light fading smoothly into a deep blue twilight over the dense jungle canopy, as thick fog rolls slowly between the silhouettes of tall trees and fireflies begin to blink continuously in the foreground.",
+            "status": "success",
+            "task_id": "97d8fd93"
+          },
+          {
+            "index": 9,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\010_10_a_steady_close_up_shot_capt_dc3e3039_1787537240.mp4",
+            "prompt": "10. A steady close-up shot captures a nocturnal tarsier with large eyes slowly emerging from a dark hollow in a tree trunk, gripping the rough bark with its long fingers and deliberately turning its head to observe the moonlit surroundings.",
+            "status": "success",
+            "task_id": "dc3e3039"
+          },
+          {
+            "index": 10,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\011_11_a_slow_sweeping_aerial_dron_33bee281_1787537255.mp4",
+            "prompt": "11. A slow, sweeping aerial drone shot glides smoothly forward over the vast, undulating green canopy of the rainforest, illuminated by the soft golden light of the early morning as mist steadily rises from the deep valleys.",
+            "status": "success",
+            "task_id": "33bee281"
+          },
+          {
+            "index": 11,
+            "is_video": true,
+            "path": "E:\\ViVeAI\\ViVeAI\\src-tauri\\target\\debug\\output\\012_12_a_slow_continuous_camera_ti_76d03f60_1787537270.mp4",
+            "prompt": "12. A slow, continuous camera tilt-up starts from the dark, root-tangled forest floor, moving steadily up the massive trunk of an ancient, moss-covered tree, and concluding on the sprawling branches reaching outward into the sunlit canopy.",
+            "status": "success",
+            "task_id": "76d03f60"
+          }
+        ],
+        "label": "Kết quả"
+      },
+      "dragging": false,
+      "id": "ordered_results_1787455121780",
+      "measured": {
+        "height": 270,
+        "width": 240
+      },
+      "position": {
+        "x": 870.8329510366149,
+        "y": 499.97563963787184
+      },
+      "selected": false,
+      "style": {},
+      "type": "ordered_results"
+    },
+    {
+      "data": {
+        "label": "Concat Node",
+        "mutedPorts": {
+          "results-0-in": true
+        },
+        "resultDurations": {
+          "conn-0": 10
+        },
+        "syncMode": true,
+        "transitionDuration": 0.5,
+        "transitionEnabled": true,
+        "transitionType": "fadeblack"
+      },
+      "dragging": false,
+      "id": "concat_1787455125587",
+      "measured": {
+        "height": 674,
+        "width": 300
+      },
+      "position": {
+        "x": 1204.9365692469191,
+        "y": 512.9632541266739
+      },
+      "selected": false,
+      "style": {},
+      "type": "concat"
+    },
+    {
+      "data": {
+        "fileName": "deep-beneath-the-en...",
+        "filePath": "C:\\Users\\Cuong\\Downloads\\deep-beneath-the-endless-canopy-of-the-tropical-ra.mp3",
+        "label": "Audio MP3"
+      },
+      "dragging": false,
+      "id": "upload_audio_1787455692769",
+      "measured": {
+        "height": 116,
+        "width": 220
+      },
+      "position": {
+        "x": -569.0455775524084,
+        "y": 516.6844028191138
+      },
+      "selected": false,
+      "style": {},
+      "type": "upload_audio"
+    },
+    {
+      "data": {
+        "label": "Tạo Subtitle",
+        "whisperLanguage": ""
+      },
+      "dragging": false,
+      "id": "whisper_sub_1787486813916",
+      "measured": {
+        "height": 228,
+        "width": 280
+      },
+      "position": {
+        "x": -256.34152339987185,
+        "y": 513.4877110005834
+      },
+      "selected": false,
+      "style": {},
+      "type": "whisper_sub"
+    },
+    {
+      "data": {
+        "_noteH": 98,
+        "_noteW": 233,
+        "label": "Ghi Chú",
+        "note": "Thêm file audio .mp3 vào đây và Chạy"
+      },
+      "dragging": false,
+      "id": "note_1787538911120",
+      "measured": {
+        "height": 98,
+        "width": 233
+      },
+      "position": {
+        "x": -576.6403051542627,
+        "y": 427.6060462219046
+      },
+      "selected": false,
+      "style": {},
+      "type": "note"
+    },
+    {
+      "data": {
+        "_noteH": 100,
+        "_noteW": 284,
+        "label": "Ghi Chú",
+        "note": "Prompt chuyển sub thành video. Có thể thêm phong cách vào Prompt này"
+      },
+      "dragging": false,
+      "id": "note_1787538945248",
+      "measured": {
+        "height": 100,
+        "width": 284
+      },
+      "position": {
+        "x": 135.347948417065,
+        "y": 420.3882552008123
+      },
+      "selected": false,
+      "style": {},
+      "type": "note"
+    },
+    {
+      "data": {
+        "_noteH": 257,
+        "_noteW": 627,
+        "label": "Ghi Chú",
+        "note": "Để chạy được Qui Trình này cần cài tab \"Giọng đọc\" và chạy thành công. Thêm tài khoản Google ở góc trái, nơi xem Key, nhấn vào \"Thêm tài khoản Google\" trình duyệt mở ra, đăng nhập gmail vào, xong tắt.\n\nCác bạn cần năm rõ qui trình, cách viết Prompt để sửa đổi cho phù hợp. Tool Auto là công cụ, sản phẩm phụ thuộc rất từ Prompt.  \n\n* Trong quá trình chạy, nếu có lỗi video. Hãy nhấn \"Chạy lại lỗi\" góc trái.\n* Chú ý cài đặt video Dọc/Ngang tại 2 node \"Text - Video\" và \"Edit Video\""
+      },
+      "dragging": false,
+      "id": "note_1787558575362",
+      "measured": {
+        "height": 257,
+        "width": 627
+      },
+      "position": {
+        "x": -570.1293519305704,
+        "y": 773.1956461073902
+      },
+      "selected": true,
+      "type": "note"
+    }
+  ],
+  "edges": [
+    {
+      "id": "xy-edge__ordered_results_1787455121780results-out-concat_1787455125587results-0-in",
+      "selected": false,
+      "source": "ordered_results_1787455121780",
+      "sourceHandle": "results-out",
+      "target": "concat_1787455125587",
+      "targetHandle": "results-0-in"
+    },
+    {
+      "id": "xy-edge__t2v_1787455108948video-out-ordered_results_1787455121780results-in",
+      "selected": false,
+      "source": "t2v_1787455108948",
+      "sourceHandle": "video-out",
+      "target": "ordered_results_1787455121780",
+      "targetHandle": "results-in"
+    },
+    {
+      "id": "xy-edge__ai_chat_1787455105020text-out-t2v_1787455108948text-in",
+      "selected": false,
+      "source": "ai_chat_1787455105020",
+      "sourceHandle": "text-out",
+      "target": "t2v_1787455108948",
+      "targetHandle": "text-in"
+    },
+    {
+      "id": "xy-edge__upload_audio_1787455692769audio-out-concat_1787455125587audio-in",
+      "selected": false,
+      "source": "upload_audio_1787455692769",
+      "sourceHandle": "audio-out",
+      "target": "concat_1787455125587",
+      "targetHandle": "audio-in"
+    },
+    {
+      "id": "xy-edge__upload_audio_1787455692769audio-out-whisper_sub_1787486813916audio-in",
+      "selected": false,
+      "source": "upload_audio_1787455692769",
+      "sourceHandle": "audio-out",
+      "target": "whisper_sub_1787486813916",
+      "targetHandle": "audio-in"
+    },
+    {
+      "id": "xy-edge__whisper_sub_1787486813916text-out-ai_chat_1787455105020text-in",
+      "selected": false,
+      "source": "whisper_sub_1787486813916",
+      "sourceHandle": "text-out",
+      "target": "ai_chat_1787455105020",
+      "targetHandle": "text-in"
+    }
+  ]
+}
