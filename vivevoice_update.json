@@ -1,1 +1,7 @@
-
+{
+  "version": "1.1.0",
+  "notes": "Sửa lỗi khởi động treo.",
+  "pub_date": "2026-09-11T12:00:00Z",
+  "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/vivevoice_runtime.zip",
+  "required": false
+}
