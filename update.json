@@ -1,1 +1,11 @@
-{"version":"1.0.3","notes":"Phien ban dau tien voi auto-update","pub_date":"2026-08-15T11:22:00Z","platforms":{"windows-x86_64":{"signature":"dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0ZxaWs5K0M0MjRwRjk5bGR0Z3dwOTdGYi8ySjJZUnNMb0FQSFdXOVpSVW1QcnMwN2Z0MWxkK00wUDlpSi92U0ZYVVAza25KUnBDdjdkVWw3ZHRWcEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTI5NTQzCWZpbGU6VmlWZSBBSV8xLjAuM194NjQtc2V0dXAubnNpcy56aXAKMWJxb3hHVUVlalVYVlFxWi92bDJsVGZsZDNCeno1ODZ0bXAyN0QvaWorZmxCMnBsUVpVeUR5cklSMVUrTkJia3A3SjhTc1dNaGxvZ2VvakJzZTdRQ2c9PQo=","url":"https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.3_x64-setup.nsis.zip"}}}
+{
+  "version": "1.0.4",
+  "notes": "Fix zombie process, cải thiện shutdown, sửa lỗi tạo subtitle và giọng đọc",
+  "pub_date": "2026-09-12T14:46:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0RYc0J5dEJsRnZYcmo4R2RZWmE0RTRicG9PZGhENmpOT0drV2dGaE5iQVNBZDBhcWUvSitObzg1cUVVNWdEN2F5V1h6aVQxemltcGcvaGk2a3Z3YmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTk4OTM1CWZpbGU6VmlWZSBBSV8xLjAuNF94NjQtc2V0dXAubnNpcy56aXAKbWJHd3h5R0REUHJiSTlxMTVCOUQvUWhEdGpESllnZk12bHpvK0VxaXhNek9jVVlpZDV6YjhudFJJeGRlRlBaVHhLZyt2NlJOaW9nY0FPS1czS2lLRFE9PQo=",
+      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.4_x64-setup.nsis.zip"
+    }
+  }
+}
