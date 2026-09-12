@@ -1,1 +1,11 @@
-{"version":"1.0.2","notes":"Phien ban dau tien voi auto-update","pub_date":"2026-08-15T11:22:00Z","platforms":{"windows-x86_64":{"signature":"dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua091TmNOVjFMcWk3QlN1aTRub2VzOURSZFQvNmE4SFlhS0RMdGxwdUhwWEMzTTBxYWRYbklwT0M5TW1LRCtNZGE3bjFZTm1pMzhPbVJoNy9Ka0lTaUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTIyNzA5CWZpbGU6VkVPUGx1c18xLjAuMl94NjQtc2V0dXAubnNpcy56aXAKb3BWK2NvYzRnUCtHelVWTStWWUdrOTl1ZDhwemY5VVZONm9kNlpVaTBiTUEzWm9ZS2g4U3FqQTFENytDZURCTThBUU1OUkdtcm15TjNGdG10Mzg4QWc9PQo=","url":"https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/VEOPlus_1.0.2_x64-setup.nsis.zip"}}}
+{
+  "version": "1.0.4",
+  "notes": "Fix zombie process, cải thiện shutdown, sửa lỗi tạo subtitle và giọng đọc",
+  "pub_date": "2026-09-12T14:56:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0pzeTM5TGtoUEZHcEl1OXhiSldBbExQTGx2MHN0WnZvNUhSZ1dOSHd0cEszbTlQSlpzbDc3S0k5ODBJVUErQXZzc05peFZyZSszd1ArdzgyN1VkY2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTk5Njc1CWZpbGU6VkVPUGx1c18xLjAuNF94NjQtc2V0dXAubnNpcy56aXAKL2xJYlF6QktoZFBEVVZjb1FCUVhFQ29CdTFBNW93TXoyd1JPc1FIOUVIZUFvVTlWMVA0Wm5kOFpoUXBXdUdyK2tuOGVkVTVXWkx5Z2NxRDhFRkRvQ3c9PQo=",
+      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/VEOPlus_1.0.4_x64-setup.nsis.zip"
+    }
+  }
+}
