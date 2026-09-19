@@ -1,11 +1,11 @@
 {
-  "version": "1.0.4",
-  "notes": "Fix zombie process, cải thiện shutdown, sửa lỗi tạo subtitle và giọng đọc",
-  "pub_date": "2026-09-12T14:46:00Z",
+  "version": "1.0.5",
+  "notes": "Hệ thống quản lý đa tài khoản, cải thiện bảo mật và ổn định",
+  "pub_date": "2026-09-19T10:05:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0RYc0J5dEJsRnZYcmo4R2RZWmE0RTRicG9PZGhENmpOT0drV2dGaE5iQVNBZDBhcWUvSitObzg1cUVVNWdEN2F5V1h6aVQxemltcGcvaGk2a3Z3YmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTk4OTM1CWZpbGU6VmlWZSBBSV8xLjAuNF94NjQtc2V0dXAubnNpcy56aXAKbWJHd3h5R0REUHJiSTlxMTVCOUQvUWhEdGpESllnZk12bHpvK0VxaXhNek9jVVlpZDV6YjhudFJJeGRlRlBaVHhLZyt2NlJOaW9nY0FPS1czS2lLRFE9PQo=",
-      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.4_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0RNNEVFaTYxYmoxSi9YMFJ2bFJBcGRabVZxZzV3Y2NrcS9jcWxtYzdva1h1U2piWldVSkkzUTdyWnk5M2p4L1BLRktNc3k4MkZwLytTY1VvZ2dTZVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg2ODE5CWZpbGU6VmlWZSBBSV8xLjAuNV94NjQtc2V0dXAubnNpcy56aXAKY3FhTXNhbjlWVmdWb0s3MWZrdEdvRFNVVmVQa25NM0toNnE4RDMwaXU5cGVZRVdKeHNtM2x1L1RGTnJHL2wzbXRWcEowNnB0Qjg0cHRuTVF1Z0R1Qmc9PQo=",
+      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.5_x64-setup.nsis.zip?download=true"
     }
   }
 }
