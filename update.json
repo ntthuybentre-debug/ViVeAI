@@ -1,11 +1,11 @@
 {
-  "version": "1.0.5",
-  "notes": "Hệ thống quản lý đa tài khoản, cải thiện bảo mật và ổn định",
-  "pub_date": "2026-09-19T10:05:00Z",
+  "version": "1.0.6",
+  "notes": "Sửa triệt để lỗi retry tạo trùng video, tối ưu hóa luồng hàng đợi và ổn định hệ thống",
+  "pub_date": "2026-10-01T12:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0RNNEVFaTYxYmoxSi9YMFJ2bFJBcGRabVZxZzV3Y2NrcS9jcWxtYzdva1h1U2piWldVSkkzUTdyWnk5M2p4L1BLRktNc3k4MkZwLytTY1VvZ2dTZVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5Nzg2ODE5CWZpbGU6VmlWZSBBSV8xLjAuNV94NjQtc2V0dXAubnNpcy56aXAKY3FhTXNhbjlWVmdWb0s3MWZrdEdvRFNVVmVQa25NM0toNnE4RDMwaXU5cGVZRVdKeHNtM2x1L1RGTnJHL2wzbXRWcEowNnB0Qjg0cHRuTVF1Z0R1Qmc9PQo=",
-      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.5_x64-setup.nsis.zip?download=true"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua0ZXL0lzZ1Uyb1ZHYWNBV2hUd0EwNW5ueHliSm9tNmFlWStoSnhWelRvWncyaGZPZ1lJcW93YjMzcHpSY0VwU2I2QXBKOGozZVIzYWx5Sm1Qd1oyZFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODU0OTIwCWZpbGU6VmlWZSBBSV8xLjAuNl94NjQtc2V0dXAubnNpcy56aXAKSUJaRHlSUGpzRll0QmowaEdXeUl4WlZKc0ZMS1RpbThZdU5taGZCeW1jbkxoNlpXMEhxR09EbXl4cHFpWHhVMis5Z2ozVUxGL0RYMXExZ0RzSFQzQWc9PQo=",
+      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.6_x64-setup.nsis.zip?download=true"
     }
   }
 }
