@@ -4,8 +4,8 @@
   "pub_date": "2026-10-01T12:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua05yaXlucDUwejhIZXlLdE9qWnptVy9aWFVvN2NzcDBsRzRHdTUwMXhvcU5DWm9LYmFiVGNvNHVNNENUYitjQkJaNVJzc1hrdUdGY3pjc3dYWW4vbXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzUxMTM1CWZpbGU6VmlWZSBBSV8xLjAuN194NjQtc2V0dXAubnNpcy56aXAKd0VpOE1XQTIzd05GN1FVRHBkdmovOHJ5bGxiSUszKzJoZDlWSGJYb1ZUZks5WlVua0xDc2g3cWh4bjZQRk9GdnFhaUVSRm81Tm5BRU9lSHY1UjRzRGc9PQo=",
-      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.7_x64-setup.nsis.zip?download=true"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUc2xDSEZJUk1Ua01RV3NWamZjcFZ3L005MEIxb00xL1VhSkdaeUdzUklNejV1TkhSOENBVS9DSnJwMkJtVGlaTUtUenZNZ0U5T09pVG82STBLbnYzVHpYblhzTU55NEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDMyNjQ5CWZpbGU6VmlWZSBBSV8xLjAuN194NjQtc2V0dXAubnNpcy56aXAKZU5ZNFFGZElHNjhYdEpXS3FrMUpicitaUDQxYVhRUEJnZ0pSejRsRklzd282Ny9aUTgxTllMWjN0MzVIbWRZU2pjRUhORm9IbFFUdk0yS1NHK3NBQXc9PQo=",
+      "url": "https://huggingface.co/ntthuybentre-debug/ViVeAI/resolve/main/ViVe%20AI_1.0.7_x64-setup.nsis.zip"
     }
   }
 }
