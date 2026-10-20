@@ -1,1 +1,12 @@
+{
+  "version": "1.0.1",
+  "notes": "Cập nhật tiện ích Captcha mới nhất, sửa lỗi tự động giải mã và cải tiến hiệu năng.",
+  "pub_date": "2026-10-20T15:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRllGWm5HN2IzdHhMK3daNlRWOWYzeFFmKytVN3VoeTRvblFOS1J6OTBzVG0rbkVNK0FhNU1hdHdMRm03S2p1L2t3djQrYWhHNW1TSXRSN1FRLzMxZ3I3SnlLbmkwbkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTA4Mjg4CWZpbGU6b21pXzEuMC4xX3g2NC1zZXR1cC5uc2lzLnppcAp4S1FrUVhyTzJOcFNNcFpJZmJQMkVianMxN09wZldaSEE4OFV6WEJ6RTQ2aDFEQnBTbDI2UnhyN0JPaEtSZjA5Y3FBOGN4THFmUmdBeWJGcTRHcFpCQT09Cg==",
+      "url": "https://huggingface.co/omiveo/omi/resolve/main/omi_1.0.1_x64-setup.nsis.zip"
+    }
+  }
+}
 
